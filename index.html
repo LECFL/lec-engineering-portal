@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEC Engineering Portal</title>
+  <meta name="description" content="A modern portal for the applications, services, and architecture powering Lubavitch Educational Center." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="mark">LEC</span><span>Engineering</span></a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#technology">Technology</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="eyebrow">Lubavitch Educational Center</div>
+      <h1>Building the technology platform that powers LEC.</h1>
+      <p class="hero-copy">A central view of the applications, services, integrations, and infrastructure behind student data, Google Workspace, fundraising, communications, teacher workflows, AI operations, and observability.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">Explore projects</a>
+        <a class="button ghost" href="#architecture">View architecture</a>
+      </div>
+      <div class="stats">
+        <div><strong>16</strong><span>tracked projects</span></div>
+        <div><strong>8</strong><span>platform areas</span></div>
+        <div><strong>1</strong><span>legacy SIS source of truth</span></div>
+        <div><strong>AI</strong><span>ops and knowledge layer</span></div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <div class="eyebrow">Platform map</div>
+        <h2>From legacy SIS to modern cloud apps.</h2>
+      </div>
+      <p>LEC runs a constellation of internal Next.js, Firebase, GCP, Google Workspace, Stripe, SQL Server, MongoDB, and AI tooling. This portal turns that ecosystem into a navigable product map.</p>
+    </section>
+
+    <section class="section feature-grid">
+      <article class="feature"><span>01</span><h3>Student information</h3><p>The legacy SQL Server SIS remains the source of truth for students, families, enrollment, attendance, staff, and payments.</p></article>
+      <article class="feature"><span>02</span><h3>Google Workspace</h3><p>GAM frontend and backend automate users, Chromebooks, Classroom, groups, policies, calendars, and Drive workflows.</p></article>
+      <article class="feature"><span>03</span><h3>Communications</h3><p>LEConnect dashboards, attendance notifications, SendGrid, SMS, WhatsApp, push, short URLs, and webhook logging support family communication.</p></article>
+      <article class="feature"><span>04</span><h3>AI operations</h3><p>Golem, Bina, and LEC DB Knowledge provide AI-assisted engineering, support, memory, skills, and safe SIS context.</p></article>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <div><div class="eyebrow">Project catalog</div><h2>Core systems</h2></div>
+        <p>Each project card summarizes purpose, audience, category, status, and role in the LEC platform.</p>
+      </div>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search projects, technologies, audiences..." />
+        <select id="filter"><option value="all">All categories</option><option>Dashboard</option><option>Google Workspace</option><option>Communications</option><option>Operations</option><option>Fundraising</option><option>Student Tools</option><option>Documentation</option><option>Automation</option></select>
+      </div>
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section id="architecture" class="section">
+      <div class="section-head">
+        <div><div class="eyebrow">Architecture</div><h2>How the platform fits together</h2></div>
+        <p>A simplified map of the major system relationships described in the master context.</p>
+      </div>
+      <div class="architecture">
+        <div class="node core">Legacy SIS<br><small>SQL Server / Magic XPA</small></div>
+        <div class="connections"><span></span><span></span><span></span></div>
+        <div class="arch-row">
+          <div class="node">Teacher Workflows</div>
+          <div class="node">Attendance Pipeline</div>
+          <div class="node">Gradebook Sync</div>
+        </div>
+        <div class="connections wide"><span></span><span></span><span></span></div>
+        <div class="arch-row two">
+          <div class="node">Firebase / GCP Apps</div>
+          <div class="node">Google Workspace / GAM</div>
+        </div>
+        <div class="connections wide"><span></span><span></span><span></span></div>
+        <div class="arch-row">
+          <div class="node">Dashboard</div>
+          <div class="node">LEConnect</div>
+          <div class="node">Golem + Tracing</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="section">
+      <div class="section-head">
+        <div><div class="eyebrow">Technology</div><h2>Platform building blocks</h2></div>
+        <p>The stack spans modern web apps, cloud services, legacy data, communication systems, and AI tooling.</p>
+      </div>
+      <div class="tech-grid">
+        <div>Next.js / React / TypeScript</div><div>Firebase Auth + Firestore</div><div>Google Cloud Run</div><div>Firebase App Hosting</div><div>Google Workspace / GAM</div><div>SQL Server SIS</div><div>MongoDB traces</div><div>Stripe + Connect</div><div>SendGrid / SMS / WhatsApp</div><div>Redis / BullMQ / Celery</div><div>Cloud Tasks</div><div>AI agents + knowledge bases</div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section roadmap">
+      <div class="section-head">
+        <div><div class="eyebrow">Roadmap</div><h2>What comes next</h2></div>
+        <p>This first portal release is static. The next releases will add dynamic project pages, live GitHub data, Zite sync, and AI search.</p>
+      </div>
+      <div class="roadmap-grid">
+        <article><h3>Now</h3><p>Static portal, project catalog, architecture overview, and deployment foundation.</p></article>
+        <article><h3>Next</h3><p>Individual project pages, deeper content model, and GitHub repository metadata.</p></article>
+        <article><h3>Later</h3><p>Zite CMS sync, interactive dependency graph, AI engineering assistant, and live ops views.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>LEC Engineering Portal</strong>
+    <span>Built from the LEC Systems master context. First static release.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
