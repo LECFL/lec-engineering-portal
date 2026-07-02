@@ -1,0 +1,146 @@
+[
+  {
+    "name": "LEC Engineering Ecosystem",
+    "repo": "Cross-repo overview",
+    "status": "Featured",
+    "category": "Operations",
+    "audience": ["Administration", "IT"],
+    "summary": "Canonical overview of LEC's internal software ecosystem: legacy SIS, Google Workspace/GAM, Firebase/GCP apps, Stripe fundraising, LEConnect messaging, short links, tracing, and AI ops tooling.",
+    "copy": "Start here for the full map of LEC engineering. This overview connects the legacy SIS, Google Workspace management, fundraising, messaging, observability, and internal AI operations into one coherent system map."
+  },
+  {
+    "name": "LEC DB Knowledge",
+    "repo": "lec-db-knowledge",
+    "status": "Featured",
+    "category": "Documentation",
+    "audience": ["Administration", "IT"],
+    "summary": "Documentation-only knowledge base for the legacy LEC SIS schema and business rules, consumed by internal AI agents such as Bina and Golem.",
+    "copy": "The institutional memory for the SIS. LEC DB Knowledge gives AI assistants and developers a reviewed map of core school data domains."
+  },
+  {
+    "name": "Fundraising Campaign Platform",
+    "repo": "lec-fundraising",
+    "status": "Featured",
+    "category": "Fundraising",
+    "audience": ["Administration", "Fundraising"],
+    "summary": "Public Stripe-based fundraising platform where admins create campaigns, donation pages, honor walls, progress bars, and live dashboards.",
+    "copy": "A modern campaign platform for LEC fundraising, supporting one-time and monthly giving, campaign pages, honor-wall recognition, Stripe routing, and live dashboards."
+  },
+  {
+    "name": "LEC App Dashboard",
+    "repo": "lec-app-dashbaord",
+    "status": "Featured",
+    "category": "Dashboard",
+    "audience": ["Administration", "IT"],
+    "summary": "Internal staff and IT dashboard for LEConnect ecosystem usage, Firebase user management, cloud/on-prem server inventory, and Nylas scheduler tools.",
+    "copy": "The operating dashboard for LEC's app ecosystem. Staff can review usage, manage users, inspect infrastructure, and support parent-teacher scheduling from one place."
+  },
+  {
+    "name": "GAM Management Frontend",
+    "repo": "gam-managment-front",
+    "status": "Featured",
+    "category": "Google Workspace",
+    "audience": ["Administration", "Teachers", "IT"],
+    "summary": "Next.js administrative console for managing Google Workspace users, devices, departments, classes, policies, and guided compliance decisions.",
+    "copy": "A guided Google Workspace control center for LEC. Principals and IT staff can manage users, Chromebooks, classes, departments, and policies without touching GAM directly."
+  },
+  {
+    "name": "GAM Backend",
+    "repo": "gam",
+    "status": "Featured",
+    "category": "Google Workspace",
+    "audience": ["IT"],
+    "summary": "Core Google Workspace backend wrapping GAMADV-XTD3, Google Admin SDK, Classroom APIs, Calendar, Drive, Celery/Redis jobs, and Firestore logs.",
+    "copy": "The service layer behind LEC Google Workspace automation. It centralizes credentials and exposes safe programmatic operations for users, devices, groups, Classroom, calendars, and Drive."
+  },
+  {
+    "name": "Teacher Workflows",
+    "repo": "teacher-workflows",
+    "status": "Active",
+    "category": "Student Tools",
+    "audience": ["Teachers", "Students"],
+    "summary": "Teacher-facing certificate generator that reads class and student data from the legacy SIS and renders printable customized PDFs.",
+    "copy": "A practical teacher tool for end-of-year recognition. Teachers sign in, select classes, customize certificate language, and generate polished PDFs."
+  },
+  {
+    "name": "LEConnect Messaging Dashboard",
+    "repo": "leconnect-dashboard",
+    "status": "Active",
+    "category": "Communications",
+    "audience": ["Administration", "Office Staff", "IT"],
+    "summary": "Monitoring and control dashboard for LEConnect mass communication batches, delivery status, webhook logs, recipient search, resend, cancel, and sync actions.",
+    "copy": "A command center for family communications. Staff can monitor batches, inspect delivery results, search recipients, review webhook logs, and coordinate resend or cancellation actions."
+  },
+  {
+    "name": "Attendance Notification Docs",
+    "repo": "attendance-notification-docs",
+    "status": "Active",
+    "category": "Documentation",
+    "audience": ["Administration", "Office Staff", "IT"],
+    "summary": "Documentation for the SQL Server attendance and absence-notification pipeline, including SendGrid transport and webhook tracking.",
+    "copy": "The reference guide for LEC attendance notifications and the shared messaging transport conventions behind the scenes."
+  },
+  {
+    "name": "LEC Short URL",
+    "repo": "lec-short-url",
+    "status": "Active",
+    "category": "Operations",
+    "audience": ["Administration", "IT", "Office Staff"],
+    "summary": "Internal short-link and QR-code microservice with click tracking, batch templated links, destination checks, and webhook relay into Connect.",
+    "copy": "LEC's shared short-link service creates branded, trackable links and QR codes while capturing click analytics and relaying events to legacy Connect systems."
+  },
+  {
+    "name": "LEC Tracing",
+    "repo": "lec-tracing",
+    "status": "Needs Review",
+    "category": "Dashboard",
+    "audience": ["IT"],
+    "summary": "Internal observability dashboard for searching API and webhook traces, replaying requests, and minting scoped temporary trace links.",
+    "copy": "A debugging cockpit for backend services, helping engineers inspect request history, search trace data, replay requests, and share scoped trace views."
+  },
+  {
+    "name": "Golem AI Ops Agent",
+    "repo": "lec-full-stack-golem",
+    "status": "Featured",
+    "category": "Automation",
+    "audience": ["IT"],
+    "summary": "Internal AI ops/support agent with Claude Agent SDK, persistent memory, skills, scheduled jobs, GitHub context, Firebase, Mongo traces, and Redis workers.",
+    "copy": "The meta-tool for operating LEC engineering. Golem helps engineers inspect logs, reason across services, maintain memory, use skills, and coordinate jobs."
+  },
+  {
+    "name": "LEC Postman",
+    "repo": "lec-postman",
+    "status": "Active",
+    "category": "Operations",
+    "audience": ["IT"],
+    "summary": "Self-hosted internal Postman clone for creating, saving, and executing HTTP requests against LEC services with developer APIs.",
+    "copy": "An internal API workbench for LEC developers and AI agents to run saved requests, manage environments, broker authenticated service calls, and test APIs."
+  },
+  {
+    "name": "Gradebook Wizard Integration",
+    "repo": "gradebookwizard-integration",
+    "status": "Needs Review",
+    "category": "Student Tools",
+    "audience": ["Administration", "Teachers", "IT"],
+    "summary": "Planned SIS-to-Gradebook Wizard automation for year-start class/roster setup and ongoing enrollment add/drop synchronization.",
+    "copy": "A planned bridge between the LEC SIS and Gradebook Wizard to reduce manual setup by syncing classes, rosters, and enrollment changes."
+  },
+  {
+    "name": "G Suite Management Dashboard",
+    "repo": "gsuite-management-dashboard",
+    "status": "Needs Review",
+    "category": "Google Workspace",
+    "audience": ["IT"],
+    "summary": "Google Workspace management project surfaced from GitHub; should be reviewed against the GAM frontend/backend stack.",
+    "copy": "A Google Workspace management project in the LEC GitHub organization. Review against the GAM stack to determine whether it is historical, experimental, or current."
+  },
+  {
+    "name": "Tablet Enrollment",
+    "repo": "tablet-enroll",
+    "status": "Needs Review",
+    "category": "Google Workspace",
+    "audience": ["IT", "Students"],
+    "summary": "Device-enrollment project candidate; needs README-derived details or GitHub metadata to clarify purpose and deployment status.",
+    "copy": "A device-enrollment project candidate for the engineering portal. Add README-derived details to clarify its current purpose, audience, and deployment status."
+  }
+]
